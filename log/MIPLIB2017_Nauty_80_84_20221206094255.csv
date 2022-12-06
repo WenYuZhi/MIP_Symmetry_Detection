@@ -1,0 +1,4 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,rmatr100-p10,1.0,0,7260,7359,0,0.0,25,easy,423,benchmark benchmark_suitable cardinality mixed_binary,Dmitry Krushinsky,rmatr
+1,graph20-20-1rand,1376.3753091226338,40,5587,2183,2146,98.30508474576271,22,easy,-9,benchmark binary decomposition benchmark_suitable precedence set_partitioning invariant_knapsack,Michael Bastubbe,graphs
+2,cost266-UUE,1.0,0,1446,4161,0,0.0,5,easy,25148940.55999998,benchmark decomposition benchmark_suitable aggregations set_packing mixed_binary,MIPLIB submission pool,network_design

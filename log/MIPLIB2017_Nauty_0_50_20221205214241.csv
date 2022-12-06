@@ -1,0 +1,51 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,markshare_4_0,1.0,0,4,34,0,0.0,0,easy,1,benchmark benchmark_suitable integer_knapsack general_linear,"G. Cornuéjols, M. Dawande",markshare
+1,markshare2,1.0,0,7,74,0,0.0,0,hard,1,benchmark benchmark_suitable integer_knapsack general_linear,"G. Cornuéjols, M. Dawande",markshare
+2,gen-ip054,1.0,0,27,30,0,0.0,0,easy,6840.96564179,benchmark benchmark_suitable variable_bound general_linear,Simon Bowly,generated
+3,pk1,1.0,0,45,86,0,0.0,0,easy,11,benchmark benchmark_suitable precedence mixed_binary,MIPLIB submission pool,--
+4,gen-ip002,1.0,0,24,41,0,0.0,0,easy,-4783.733392,benchmark benchmark_suitable general_linear,Simon Bowly,generated
+5,timtab1,2.0,0,171,397,2,0.5037783375314862,0,easy,764771.99999978,benchmark benchmark_suitable aggregations mixed_binary general_linear,"C. Liebchen, R. Möhring",timtab
+6,enlight_hard,1.0,0,100,200,0,0.0,0,easy,37,benchmark benchmark_suitable equation_knapsack general_linear,A. Zymolka,enlight
+7,neos-3046615-murg,1329227.995784916,30,498,274,0,0.0,0,easy,1600,benchmark benchmark_suitable aggregations variable_bound mixed_binary general_linear,Jeff Linderoth,neos-pseudoapplication-90
+8,mas76,4.0,0,12,151,4,2.6490066225165565,0,easy,40005.05398999999,benchmark benchmark_suitable invariant_knapsack mixed_binary,MIPLIB submission pool,--
+9,mas74,4.0,0,13,151,4,2.6490066225165565,0,easy,11801.18572,benchmark benchmark_suitable invariant_knapsack mixed_binary,MIPLIB submission pool,--
+10,neos-3754480-nidda,1.0,0,402,253,0,0.0,0,hard,12941.73838561778,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary,Jeff Linderoth,neos-pseudoapplication-107
+11,neos-2657525-crna,4.0,0,342,524,0,0.0,0,easy,1.810748,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning integer_knapsack general_linear,Jeff Linderoth,neos-pseudoapplication-7
+12,neos5,4.0,0,63,63,48,76.19047619047619,0,easy,15,benchmark benchmark_suitable mixed_binary,NEOS Server Submission,neos-pseudoapplication-21
+13,sp150x300d,41039051.60441364,10,450,600,244,40.666666666666664,0,easy,69,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary,MIPLIB submission pool,sp_product
+14,neos859080,24.0,0,164,160,0,0.0,0,easy,Infeasible,benchmark infeasible benchmark_suitable variable_bound general_linear,NEOS Server Submission,neos-pseudoapplication-96
+15,glass4,2.0,0,396,322,2,0.6211180124223602,0,easy,1200012599.972384,benchmark benchmark_suitable precedence set_partitioning mixed_binary,I. Luzzi,--
+16,fhnw-binpack4-4,1.0,0,620,520,0,0.0,0,hard,Infeasible,benchmark infeasible feasibility benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary,Simon Felix,binpack
+17,assign1-5-8,55296.0,0,161,156,134,85.8974358974359,0,easy,211.999999999998,benchmark benchmark_suitable set_partitioning cardinality mixed_binary,Robert Fourer,assign1
+18,neos-911970,33592320.0,0,107,888,888,100.0,0,easy,54.76,benchmark benchmark_suitable set_partitioning set_covering mixed_binary,NEOS Server Submission,neos-pseudoapplication-70
+19,supportcase26,1.0,0,870,436,0,0.0,0,easy,1745.123813,benchmark benchmark_suitable precedence mixed_binary,Michael Winkler,--
+20,tr12-30,1.0,0,750,1080,0,0.0,0,easy,130595.9999999999,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary,MIPLIB submission pool,--
+21,mad,1.0,0,51,220,0,0.0,0,easy,0.0268,benchmark benchmark_suitable set_partitioning set_packing invariant_knapsack mixed_binary,Koichi Fujii,--
+22,neos-3381206-awhea,7535266.189999672,1060,479,2375,2375,100.0,11,easy,453,benchmark decomposition benchmark_suitable integer_knapsack general_linear,Jeff Linderoth,neos-pseudoapplication-105
+23,ic97_potential,2.0,0,1046,728,0,0.0,0,easy,3941.99993090225,benchmark benchmark_suitable precedence mixed_binary general_linear,L. Peeters,--
+24,neos-3627168-kasai,19.41563659639657,80,1655,1462,1445,98.83720930232558,0,easy,988585.6199999998,benchmark decomposition benchmark_suitable variable_bound invariant_knapsack mixed_binary general_linear,Jeff Linderoth,neos-pseudoapplication-25
+25,binkar10_1,1.0,0,1026,2298,0,0.0,0,easy,6742.1998835,benchmark benchmark_suitable aggregations mixed_binary,H. Mittelmann,--
+26,exp-1-500-5-5,1.0,0,550,990,0,0.0,0,easy,65887,benchmark benchmark_suitable variable_bound set_packing mixed_binary,MIPLIB submission pool,exp_and_fc
+27,graphdraw-domain,1.0,0,865,254,0,0.0,0,easy,19685.99997550038,benchmark benchmark_suitable variable_bound set_partitioning invariant_knapsack mixed_binary general_linear,Cézar Augusto Nascimento e Silva,graphdraw
+28,beasleyC3,4.0,0,1750,2500,16,0.64,0,easy,753.9999999999128,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary,"F. Ortega, L. Wolsey",beasley
+29,neos-4338804-snowy,1645.5045573212062,60,1701,1344,0,0.0,5,hard,1471,benchmark benchmark_suitable precedence set_covering mixed_binary general_linear,Jeff Linderoth,neos-pseudoapplication-40
+30,neos-4954672-berkel,934387.838489026,190,1848,1533,0,0.0,29,hard,2612710,benchmark benchmark_suitable aggregations variable_bound mixed_binary,Jeff Linderoth,neos-pseudoapplication-43
+31,mik-250-20-75-4,1.0,0,195,270,0,0.0,1,easy,-52301,benchmark benchmark_suitable general_linear,MIPLIB submission pool,mik_250
+32,p200x1188c,1.0,0,1388,2376,0,0.0,0,easy,15078,benchmark decomposition benchmark_suitable variable_bound mixed_binary,MIPLIB submission pool,pr_product
+33,50v-10,1.0,0,233,2013,0,0.0,0,easy,3311.1799841,benchmark decomposition benchmark_suitable mixed_binary general_linear,Serge Bisaillon,--
+34,lotsize,1.0,0,1920,2985,0,0.0,0,easy,1480195,benchmark decomposition benchmark_suitable variable_bound set_packing invariant_knapsack mixed_binary,"Dinakar Gade, Simge Kucukyavuz",--
+35,mc11,1.0,0,1920,3040,0,0.0,1,easy,11688.99999999966,benchmark decomposition benchmark_suitable variable_bound mixed_binary,"F. Ortega, L. Wolsey",mc
+36,n5-3,1.0,0,1062,2550,0,0.0,3,easy,8104.999999993999,benchmark decomposition benchmark_suitable aggregations mixed_binary general_linear,A. Atamtürk,nxy-z
+37,pg,1.0,0,125,2700,0,0.0,0,easy,-8674.34260712,benchmark decomposition benchmark_suitable mixed_binary,M. Dawande,--
+38,gmu-35-40,1602.2472429084487,800,424,1205,474,39.33609958506224,1,easy,-2406733.3688,benchmark benchmark_suitable variable_bound set_packing mixed_binary,Nora Konnyu,gmu
+39,ran14x18-disj-8,1.0,0,447,504,0,0.0,0,easy,3712,benchmark benchmark_suitable variable_bound set_covering mixed_binary,J. Aronson,ran
+40,csched008,1.0,0,351,1536,0,0.0,0,easy,173,benchmark benchmark_suitable aggregations variable_bound set_partitioning mixed_binary general_linear,Tallys Yunes,csched
+41,pg5_34,1.0,0,225,2600,0,0.0,2,easy,-14339.35345,benchmark decomposition benchmark_suitable mixed_binary,M. Dawande,--
+42,csched007,1.0,0,351,1758,0,0.0,0,easy,350.9999999999955,benchmark benchmark_suitable aggregations variable_bound set_partitioning mixed_binary general_linear,Tallys Yunes,csched
+43,mcsched,32768.0,0,2107,1747,90,5.151688609044076,2,easy,211913,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing invariant_knapsack general_linear,Q. Chen,--
+44,gmu-35-50,1.8155216097377411,1840,435,1919,853,44.45023449713393,6,easy,-2607958.33,benchmark benchmark_suitable variable_bound set_packing mixed_binary,Nora Konnyu,gmu
+45,qap10,1.0,0,1820,4150,0,0.0,19,easy,339.9999999983871,benchmark binary benchmark_suitable set_partitioning,MIPLIB submission pool,--
+46,neos-3024952-loue,1.0,0,3705,3255,0,0.0,9,easy,26756,benchmark decomposition benchmark_suitable precedence integer_knapsack general_linear,Jeff Linderoth,neos-pseudoapplication-86
+47,b1c1s1,1.0,0,3904,3872,0,0.0,5,easy,24544.25,benchmark benchmark_suitable aggregations variable_bound mixed_binary,"M. Vyve, Y. Pochet",c1s1
+48,neos-4738912-atrato,4.0,0,1947,6216,192,3.088803088803089,31,easy,283627956.595,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning set_packing knapsack integer_knapsack general_linear,Jeff Linderoth,neos-pseudoapplication-37
+49,rococoC10-001000,588.5030718345549,60,1293,3117,129,4.138594802694899,18,easy,11460,benchmark benchmark_suitable precedence set_partitioning cardinality general_linear,"A. Chabrier, E. Danna, C. Le Pape, L. Perron",rococo

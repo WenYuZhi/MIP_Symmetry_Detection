@@ -1,0 +1,9 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,dano3_5,32768.0,0,3202,13873,0,0.0,680,easy,576.9249159565619,benchmark benchmark_suitable variable_bound cardinality mixed_binary,Daniel Bienstock,dano
+1,dano3_3,32768.0,0,3202,13873,0,0.0,641,easy,576.34463303,benchmark benchmark_suitable variable_bound cardinality mixed_binary,Daniel Bienstock,dano
+2,traininstance2,479001600.0,0,15603,12890,12,0.09309542280837858,727,hard,71820,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear,Gleb Belov,traininstance
+3,nexp-150-20-8-5,1.0,0,4620,20115,0,0.0,30,easy,231,benchmark benchmark_suitable set_packing mixed_binary,MIPLIB submission pool,exp_and_fc
+4,rocI-4-11,4351082.437154958,180,10883,6839,0,0.0,126,easy,-6020203,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary general_linear,Joerg Rambau,rocI
+5,drayage-25-23,665717.7494374976,90,4630,11090,6800,61.31650135256988,271,easy,101282.647018,benchmark benchmark_suitable precedence set_partitioning mixed_binary,F. Jordan Srour,drayage
+6,drayage-100-23,665717.7494374976,90,4630,11090,6800,61.31650135256988,271,easy,103333.87407,benchmark benchmark_suitable precedence set_partitioning mixed_binary,F. Jordan Srour,drayage
+7,dws008-01,193428.1311383407,20,6064,11096,0,0.0,221,hard,37412.60458794508,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning set_packing mixed_binary,Philipp Leise,dws

@@ -1,0 +1,10 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,neos-1456979,120.0,0,6770,4605,4605,100.0,392,easy,176,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_packing cardinality knapsack mixed_binary general_linear,NEOS Server Submission,neos-pseudoapplication-102
+1,eil33-2,1.0,0,32,4516,0,0.0,128,easy,934.007915999999,benchmark binary benchmark_suitable set_partitioning,J. Linderoth,eil
+2,neos-1445765,147456.0,0,2147,20617,106,0.5141388174807198,145,easy,-17783,benchmark benchmark_suitable aggregations invariant_knapsack mixed_binary,NEOS Server Submission,neos-pseudoapplication-88
+3,h80x6320d,1.0,0,6558,12640,0,0.0,271,easy,6382.099048245999,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_packing mixed_binary,MIPLIB submission pool,fixed-cost-network-flow
+4,neos-1171737,265.252859812191,30,4179,2340,2340,100.0,214,easy,-195,benchmark benchmark_suitable variable_bound set_packing mixed_binary,NEOS Server Submission,neos-pseudoapplication-80
+5,swath3,14.533490031853837,700,884,6805,483,7.097722263041881,51,easy,397.76134365,benchmark benchmark_suitable mixed_binary,D. Panton,swath
+6,swath1,9757661.781586438,700,884,6805,483,7.097722263041881,53,easy,379.07129575,benchmark benchmark_suitable mixed_binary,D. Panton,swath
+7,bnatt500,634.1974108951381,720,7029,4500,1957,43.48888888888889,351,hard,Infeasible,benchmark infeasible binary benchmark_suitable precedence set_covering invariant_knapsack binpacking knapsack,Tatsuya Akutsu,bnatt
+8,uct-subprob,1171174277.477273,20,1973,2256,316,14.00709219858156,4,easy,314,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing mixed_binary,Gerald Lach,--

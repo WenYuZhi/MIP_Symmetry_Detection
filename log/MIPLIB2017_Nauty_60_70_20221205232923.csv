@@ -1,0 +1,10 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,roll3000,19.283256531107885,60,2295,1166,0,0.0,43,easy,12889.999992,benchmark benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking integer_knapsack mixed_binary general_linear,L. Kroon,--
+1,reblock115,1.0,0,4735,1150,0,0.0,14,easy,-36800603.2332,benchmark binary benchmark_suitable precedence knapsack,Andreas Bley,reblock
+2,app1-1,1.0,0,4926,2480,0,0.0,1,easy,-3,benchmark benchmark_suitable precedence variable_bound set_covering mixed_binary,Emilie Danna,app
+3,supportcase18,131.6818944,10,240,13410,11200,83.51976137211037,128,easy,48,benchmark binary benchmark_suitable set_partitioning binpacking,Michael Winkler,--
+4,bppc4-08,1.0,0,111,1456,0,0.0,22,easy,53,benchmark benchmark_suitable set_partitioning mixed_binary,Manuel Iori,bppc
+5,sct2,1687096.7705373194,700,2151,5885,4354,73.98470688190315,336,easy,-230.9891623,benchmark benchmark_suitable precedence invariant_knapsack knapsack mixed_binary general_linear,Siemens,sct
+6,seymour,27794.361855270487,230,4944,1372,273,19.897959183673468,41,easy,423,benchmark binary benchmark_suitable variable_bound set_covering,"W. Cook, P. Seymour",--
+7,seymour1,1637.9524292582882,200,4944,1372,273,19.897959183673468,80,easy,410.76370139,benchmark benchmark_suitable variable_bound set_covering mixed_binary,MIPLIB submission pool,--
+8,bnatt400,90494586.46912883,580,5614,3600,1568,43.55555555555556,170,easy,1,benchmark binary benchmark_suitable precedence set_covering invariant_knapsack binpacking knapsack,Tatsuya Akutsu,bnatt
