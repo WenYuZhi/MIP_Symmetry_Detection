@@ -17,9 +17,9 @@ class Moniter:
         self.equal_orbits.columns = ["equivalent variables"]
         self.equal_orbits.to_csv("./" + "orbits/{}/{}.csv".format(LIB_NAME, read_file), index=0)
     
-    def set_log(self, read_file, grpsize1, grpsize2, g, n_orbits, per_orbits_node, ts, te):
+    def set_log(self, read_file, grpsize1, grpsize2, g, n_orbits, per_orbits_node, cpu_time):
         read_file = read_file.replace(".mps", "")
-        self.log_file.append([read_file, grpsize1, grpsize2, g.m, g.n, n_orbits, per_orbits_node, (te-ts).seconds])
+        self.log_file.append([read_file, grpsize1, grpsize2, g.m, g.n, n_orbits, per_orbits_node, cpu_time])
 
     def save(self, LIB_NAME, SOLVER, n_start, n_end):
         ts = datetime.datetime.now()

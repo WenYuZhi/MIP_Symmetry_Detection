@@ -12,7 +12,7 @@ BENCHMARK_PATH = "./" + "benchmark/{}/".format(LIB_NAME)
 MODEL_PATH = "./" + "benchmark/model/"
 SOLVER = "Saucy" # Nauty, Saucy
 
-n_start, n_end = 100, 200
+n_start, n_end = 160, 180
 symmetry_moniter = Moniter()
 symmetry_moniter.read_prob_stat(LIB_NAME)
 
@@ -42,6 +42,7 @@ for n in tqdm(range(n_start, n_end)):
         grpsize1, grpsize2 = g.run(adj, vertex_coloring)
     except Exception as e:
         print("Timeout Error Catched!")
+        symmetry_moniter.set_log(read_file, '--', '--', g, '--', '--', '--')
         continue
 
     te = datetime.datetime.now()
@@ -50,7 +51,8 @@ for n in tqdm(range(n_start, n_end)):
     postsolve = Postsolve(g=g, orbits=orbits)
     n_orbits, per_orbits_node, orbits_group = postsolve.stat()
     
-    symmetry_moniter.set_log(read_file, grpsize1, grpsize2, g, n_orbits, per_orbits_node, ts, te)
+    cpu_time = (te - ts).seconds
+    symmetry_moniter.set_log(read_file, grpsize1, grpsize2, g, n_orbits, per_orbits_node, cpu_time)
     symmetry_moniter.save_equal_orbits(LIB_NAME, read_file, orbits_group)
 
 symmetry_moniter.save(LIB_NAME, SOLVER, n_start, n_end)
