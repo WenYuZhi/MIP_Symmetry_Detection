@@ -1,0 +1,21 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,rmatr200-p5,0,1,37618,37816,0,0.0,0,easy,4521,benchmark benchmark_suitable cardinality mixed_binary,Dmitry Krushinsky,rmatr
+1,sing326,0,3,71606,55156,7866,14.26136775690768,0,hard,7753674.85376,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary,Daniel Espinoza,sing
+2,neos8,399,1297,46336,23228,2540,10.935078353711038,0,easy,-3719,benchmark benchmark_suitable precedence set_packing cardinality invariant_knapsack binpacking general_linear,NEOS Server Submission,neos-pseudoapplication-15
+3,brazil3,363,331,24132,23968,22022,91.88084112149532,17,easy,24,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack mixed_binary general_linear,George Fonseca,timetabling
+4,neos-860300,76,256,870,1385,0,0.0,0,easy,3200.999999999998,benchmark benchmark_suitable set_partitioning set_packing set_covering invariant_knapsack general_linear,NEOS Server Submission,neos-pseudoapplication-23
+5,neos-3988577-wolgan,--,--,44728,25870,--,--,--,easy,Infeasible,benchmark infeasible binary decomposition benchmark_suitable precedence set_packing cardinality invariant_knapsack binpacking knapsack,Hans Mittelmann,neos-pseudoapplication-64
+6,sing44,0,3,77500,59708,7866,13.174114021571649,0,hard,8128831.1772,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary,Daniel Espinoza,sing
+7,chromaticindex512-7,1,5,43006,36864,36864,100.0,22,easy,4,benchmark binary benchmark_suitable set_partitioning set_packing,Pierre Le Bodic,chromaticindex
+8,neos-2746589-doon,--,--,47788,50936,--,--,--,easy,2008.199999999999,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary general_linear,Jeff Linderoth,neos-pseudoapplication-52
+9,cmflsp50-24-8-8,97,289,4616,16392,526,3.2088823816495853,0,easy,55789389.886,benchmark benchmark_suitable precedence variable_bound mixed_binary,Andrea Arias,cmflsp
+10,atlanta-ip,4455,11695,28812,48738,19736,40.494070335262016,3,easy,90.009878614,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear,"E-Plus, D. Bienstock, A. Bley, R. Wessäly",--
+11,app1-2,0,1,66768,26871,0,0.0,0,easy,-41,benchmark decomposition benchmark_suitable precedence variable_bound set_covering mixed_binary,Emilie Danna,app
+12,neos-4722843-widden,--,--,116350,77723,--,--,--,easy,25009.662227,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning invariant_knapsack binpacking knapsack mixed_binary general_linear,Jeff Linderoth,neos-pseudoapplication-30
+13,tbfp-network,0,1,4872,72747,0,0.0,0,easy,24.16319444,benchmark binary benchmark_suitable set_partitioning cardinality,Rob Pratt,--
+14,neos-4763324-toguru,447,231,107186,53593,0,0.0,0,easy,1613.03884585,benchmark benchmark_suitable precedence variable_bound set_partitioning cardinality,Hans Mittelmann,neos-pseudoapplication-106
+15,neos-787933,--,--,1897,236376,--,--,--,easy,30,benchmark binary decomposition benchmark_suitable binpacking mixed_binary,NEOS Server Submission,neos-pseudoapplication-36
+16,sp97ar,9,34,1761,14101,0,0.0,0,easy,660705645.759,benchmark binary benchmark_suitable variable_bound set_packing set_covering mixed_binary,"J. Goessens, S. v. Hoessel, L. Kroon",sp9
+17,mushroom-best,3,12,8584,8468,2233,26.36986301369863,0,easy,0.0553337612,benchmark benchmark_suitable variable_bound general_linear,Berk Ustun,ustun
+18,blp-ic98,0,4,807,13640,6,0.04398826979472141,0,easy,4491.44758395,benchmark decomposition benchmark_suitable set_packing mixed_binary general_linear,M. Lübbecke,blp
+19,ns1116954,--,--,132226,12648,--,--,--,easy,0,benchmark feasibility benchmark_suitable precedence set_partitioning set_packing cardinality binpacking knapsack mixed_binary,NEOS Server Submission,neos-pseudoapplication-51

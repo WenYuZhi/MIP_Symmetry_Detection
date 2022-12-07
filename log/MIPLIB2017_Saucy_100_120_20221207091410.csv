@@ -1,0 +1,21 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,peg-solitaire-a3,0,1,5954,4552,0,0.0,0,easy,1,benchmark binary benchmark_suitable aggregations variable_bound set_partitioning cardinality binpacking,Hiroshige Dan ; Koichi Fujii,pegsolitaire
+1,glass-sc,0,1,6119,214,0,0.0,0,easy,23,benchmark binary benchmark_suitable set_covering,Marc Pfetsch,maxfeassub
+2,CMS750_4,0,1,16382,11697,0,0.0,0,easy,252,benchmark benchmark_suitable precedence invariant_knapsack mixed_binary,MIPLIB submission pool,--
+3,irp,304,946,78,20315,1778,8.75215358109771,0,easy,12159.49283539698,benchmark binary benchmark_suitable set_partitioning,MIPLIB submission pool,--
+4,neos-1171448,87,63,13206,4914,4914,100.0,17,easy,-309,benchmark benchmark_suitable variable_bound invariant_knapsack mixed_binary,NEOS Server Submission,neos-pseudoapplication-8
+5,neos-827175,205,127,24699,32504,32336,99.48314053654934,43,easy,112.00152,benchmark decomposition benchmark_suitable aggregations set_partitioning set_packing cardinality binpacking mixed_binary general_linear,NEOS Server Submission,neos-pseudoapplication-87
+6,neos-950242,23,24,35856,5760,5760,100.0,17,easy,4,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_covering invariant_knapsack general_linear,NEOS Server Submission,neos-pseudoapplication-72
+7,satellites2-60-fs,610,1302,30076,35378,9446,26.700209169540393,1,easy,-19.0000000001,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality knapsack mixed_binary,He Renjie,satellites
+8,comp21-2idx,116,168,14132,10863,318,2.927368130350732,0,hard,74,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear,Matias Sørensen,coursetimetabling
+9,cbs-cta,0,1,10356,24793,0,0.0,0,easy,0,benchmark decomposition benchmark_suitable variable_bound mixed_binary,Jordi Castro,cta
+10,piperout-08,10,14,14755,10399,14,0.13462832964708146,0,easy,125054.9999999999,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack equation_knapsack integer_knapsack mixed_binary general_linear,Gleb Belov,piperout
+11,fiball,2121,2371,6936,34219,31783,92.8811479002893,18,easy,138,benchmark decomposition benchmark_suitable aggregations precedence set_partitioning general_linear,MIPLIB submission pool,--
+12,neos-5188808-nattai,0,1,35142,14544,0,0.0,0,easy,0.110283622999984,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality knapsack mixed_binary,Jeff Linderoth,neos-pseudoapplication-98
+13,mzzv11,46,156,12871,10240,310,3.02734375,0,easy,-21718,benchmark benchmark_suitable variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack general_linear,S. Lukac,--
+14,momentum1,0,1,43238,5174,0,0.0,0,easy,109143.4935,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary,T. Koch,momentum
+15,leo1,6,22,594,6731,0,0.0,0,easy,404227536.16,benchmark benchmark_suitable variable_bound set_packing set_covering mixed_binary,COR@L test set,--
+16,trento1,24,74,2513,7687,132,1.7171848575517106,0,easy,5189487,benchmark benchmark_suitable mixed_binary general_linear,MIPLIB submission pool,--
+17,net12,0,1,14573,14115,0,0.0,0,easy,214,benchmark decomposition benchmark_suitable precedence set_packing cardinality invariant_knapsack mixed_binary,P. Belotti,--
+18,mzzv42z,33,111,14962,11717,220,1.8776137236493984,0,easy,-20540,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality general_linear,MIPLIB submission pool,--
+19,piperout-27,57,113,18600,11659,18,0.15438716871086713,0,easy,8123.999999999973,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack equation_knapsack integer_knapsack mixed_binary general_linear,Gleb Belov,piperout

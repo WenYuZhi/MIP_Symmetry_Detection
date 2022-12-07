@@ -1,0 +1,21 @@
+,instance,grpsize1,grpsize2,constraints,variables,equivalent vars,#oribits(%),CPU time(s),status,objectve,tags,submitter,group
+0,decomp2,5416,6067,11235,14387,14387,100.0,5,easy,-160,benchmark binary decomposition benchmark_suitable precedence set_partitioning set_packing invariant_knapsack binpacking mixed_binary,Martin Berger,--
+1,wachplan,1,5,1790,3361,3248,96.63790538530199,3,easy,-8,benchmark benchmark_suitable variable_bound set_partitioning set_packing set_covering invariant_knapsack mixed_binary general_linear,Sebastian Orlowski,--
+2,unitcal_7,304,1013,51846,25755,13464,52.277227722772274,0,easy,19635558.244,benchmark benchmark_suitable precedence variable_bound mixed_binary general_linear,R. O'Neill,--
+3,neos-662469,0,1,1413,18235,0,0.0,0,easy,184379.9999999999,benchmark benchmark_suitable variable_bound set_packing set_covering binpacking knapsack integer_knapsack general_linear,NEOS Server Submission,neos-pseudoapplication-73
+4,neos-1354092,--,--,5444,13702,--,--,--,easy,46,benchmark decomposition benchmark_suitable variable_bound set_partitioning general_linear,NEOS Server Submission,neos-pseudoapplication-47
+5,neos-5195221-niemur,1430,4753,47946,14546,0,0.0,0,easy,0.0038354326,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack knapsack mixed_binary,Jeff Linderoth,neos-pseudoapplication-32
+6,neos-933966,1375,1204,12047,31762,30409,95.74019268308041,17,easy,318,benchmark benchmark_suitable precedence variable_bound set_packing invariant_knapsack mixed_binary,NEOS Server Submission,neos-pseudoapplication-34
+7,neos-960392,--,--,6319,59376,--,--,--,easy,-238,benchmark binary benchmark_suitable precedence variable_bound set_partitioning set_packing invariant_knapsack binpacking knapsack,NEOS Server Submission,neos-pseudoapplication-94
+8,supportcase40,30,101,38292,16440,0,0.0,0,easy,24256.3122898,benchmark decomposition benchmark_suitable precedence variable_bound set_packing mixed_binary,Domenico Salvagnin,--
+9,comp07-2idx,46,72,21366,17264,790,4.5759962928637625,0,easy,6,benchmark decomposition benchmark_suitable precedence variable_bound set_packing cardinality invariant_knapsack mixed_binary general_linear,Matias Sørensen,coursetimetabling
+10,neos-4300652-rahue,2662,1711,83094,33003,1729,5.2389176741508345,1,hard,2.1416,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality knapsack mixed_binary,Jeff Linderoth,neos-pseudoapplication-13
+11,neos-1122047,0,1,57791,5100,0,0.0,0,easy,161,benchmark benchmark_suitable precedence variable_bound mixed_binary,NEOS Server Submission,neos-pseudoapplication-46
+12,radiationm18-12-05,0,1,70638,40623,0,0.0,0,easy,17566,benchmark decomposition benchmark_suitable aggregations precedence variable_bound integer_knapsack mixed_binary general_linear,Gleb Belov,radiation
+13,istanbul-no-cutoff,0,3,20567,5282,4,0.07572889057175312,0,easy,204.08170701,benchmark benchmark_suitable aggregations variable_bound knapsack mixed_binary,Utz-Uwe Haus,--
+14,germanrr,0,1,11018,10813,0,0.0,0,easy,47095869.649,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning general_linear,Q. Chen,--
+15,leo2,0,3,594,11100,0,0.0,0,easy,404077441.12,benchmark benchmark_suitable variable_bound set_packing set_covering mixed_binary,COR@L test set,--
+16,satellites2-40,184,613,34476,35378,8932,25.247328848436883,0,easy,-19,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary,He Renjie,satellites
+17,lectsched-5-obj,579,1029,40123,21805,2750,12.611786287548727,0,easy,24,benchmark benchmark_suitable aggregations precedence variable_bound set_covering invariant_knapsack integer_knapsack general_linear,Harald Schilly,lectsched
+18,ns1952667,69,229,82,13264,452,3.407720144752714,0,easy,0,benchmark feasibility benchmark_suitable integer_knapsack general_linear,NEOS Server Submission,neos-pseudoapplication-78
+19,30n20b8,0,1,666,18380,0,0.0,0,easy,302,benchmark benchmark_suitable precedence set_partitioning general_linear,"E. Coughlan, M. Lübbecke, J. Schulz",--
