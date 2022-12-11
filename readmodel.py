@@ -21,17 +21,8 @@ class ModelData:
             self.model.update()
         return self.read_file
 
-    def get_A(self):
-        return self.model.getA()
-    
-    def get_rhs(self):
-        return self.model.RHS
-    
-    def get_obj(self):
-        return self.model.obj
-    
-    def get_sense(self):
-        return self.model.Sense
+    def get_coeff(self):
+        return self.model.getA(), self.model.RHS, self.model.obj, self.model.Sense
     
     def get_vtype(self):
         return self.model.VType
@@ -74,18 +65,14 @@ class Presolve:
     def _print_status(self):
         print("standard model: {} rows, {} columns, {} nonzeros".format(self.A1.shape[0], self.A1.shape[1], self.A1.nnz))
 
-LIB_NAME = "MIPLIB2010"
+LIB_NAME = "MIPLIB2017"
 BENCHMARK_PATH = "./" + "benchmark/{}/".format(LIB_NAME)
 MODEL_PATH = "./" + "benchmark/model/"
 
 if __name__ == "__main__":
     model_data = ModelData(BENCHMARK_PATH)
     read_file = model_data.load(n = 3, presolve = False)    
-    rhs = model_data.get_rhs()
-    sense = model_data.get_sense()
-    A = model_data.get_A()
-
-    obj = model_data.get_obj()
+    A, rhs, obj, sense = model_data.get_coeff()
     vtype = model_data.get_vtype()
     model_data.write_model(MODEL_PATH)
 

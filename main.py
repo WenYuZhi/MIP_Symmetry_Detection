@@ -12,18 +12,14 @@ BENCHMARK_PATH = "./" + "benchmark/{}/".format(LIB_NAME)
 MODEL_PATH = "./" + "benchmark/model/"
 SOLVER = "Saucy" # Nauty, Saucy
 
-n_start, n_end = 160, 180
+n_start, n_end = 0, 50
 symmetry_moniter = Moniter()
 symmetry_moniter.read_prob_stat(LIB_NAME)
 
 for n in tqdm(range(n_start, n_end)):
     model_data = ModelData(BENCHMARK_PATH)
-    read_file = model_data.load(n, presolve = False)    
-    rhs = model_data.get_rhs()
-    sense = model_data.get_sense()
-    A = model_data.get_A()
-
-    obj = model_data.get_obj()
+    read_file = model_data.load(n, presolve = True)    
+    A, rhs, obj, sense = model_data.get_coeff()
     vtype = model_data.get_vtype()
     # model_data.write_model(MODEL_PATH)
 
@@ -56,3 +52,4 @@ for n in tqdm(range(n_start, n_end)):
     symmetry_moniter.save_equal_orbits(LIB_NAME, read_file, orbits_group)
 
 symmetry_moniter.save(LIB_NAME, SOLVER, n_start, n_end)
+print(symmetry_moniter.benchmark_stat)
