@@ -7,28 +7,34 @@ import os
 class ModelData:
     def __init__(self, benchmark_path) -> None:
         self.path = benchmark_path
-        self.file_info = [(f, os.path.getsize(self.path + f)) \
-        for f in os.listdir(self.path) if ".mps" in f]
+        self.file_info = [(f, os.path.getsize(self.path + f)) for f in os.listdir(self.path) if ".mps" in f]
         self.file_info = sorted(self.file_info, key = lambda x: x[1])
         
-    def load(self, n, presolve = False):
-        self.read_file = self.file_info[n][0]
-        assert(n < len(self.file_info))
-        assert(".mps" in self.read_file)
-        self.model = gp.read(self.path + self.read_file)
-        if presolve:
-            self.model = self.model.presolve()
-            self.model.update()
+    def load(self, n_start, n_end, presolve = False):
+        self.model = []
+        self.read_file = [self.file_info[i][0] for i in range(n_start, n_end)]
+        for f in self.read_file:
+            self.m = gp.read(self.path + f)
+            if presolve:
+                self.m = self.m.presolve()
+                self.m.update()
+            self.model.append(self.m)
+        self.read_file = [f.replace(".mps","") for f in self.read_file]
         return self.read_file
 
     def get_coeff(self):
-        return self.model.getA(), self.model.RHS, self.model.obj, self.model.Sense
+        A = [self.model[i].getA() for i in range(len(self.model))]
+        rhs = [self.model[i].RHS for i in range(len(self.model))]
+        obj = [self.model[i].obj for i in range(len(self.model))]
+        sense = [self.model[i].Sense for i in range(len(self.model))]
+        return A, rhs, obj, sense
     
     def get_vtype(self):
-        return self.model.VType
+        return [self.model[i].VType for i in range(len(self.model))] 
     
     def write_model(self, model_path):
-        self.model.write(model_path + self.read_file.replace('.mps','') + '.lp')
+        for i in range(len(self.model)):
+            self.model[i].write(model_path + self.read_file[i]+ '.lp')
 
 class Presolve:
     def __init__(self, A, obj, rhs, sense) -> None:
@@ -71,15 +77,15 @@ MODEL_PATH = "./" + "benchmark/model/"
 
 if __name__ == "__main__":
     model_data = ModelData(BENCHMARK_PATH)
-    read_file = model_data.load(n = 3, presolve = False)    
+    read_file = model_data.load(n_start = 2, n_end = 10, presolve = False)    
     A, rhs, obj, sense = model_data.get_coeff()
     vtype = model_data.get_vtype()
     model_data.write_model(MODEL_PATH)
 
-    presolve_model = Presolve(A, obj, rhs, sense)
+    presolve_model = Presolve(A[0], obj[0], rhs[0], sense[0])
     A1, rhs, obj, sense = presolve_model.to_standard()
 
-    g = MatrixGraph(A1, rhs, obj, vtype)
+    g = MatrixGraph(A1, rhs, obj, vtype[0])
     g.bulid_node()
     adjacency_dict = g.connect()
     vertex_coloring = g.color_node()

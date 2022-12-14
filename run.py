@@ -10,13 +10,7 @@ import time
 
 ray.init()
 @ray.remote
-def dection_symmetry(n):
-    model_data = ModelData(BENCHMARK_PATH)
-    read_file = model_data.load(n, presolve = True)    
-    A, rhs, obj, sense = model_data.get_coeff()
-    vtype = model_data.get_vtype()
-    # model_data.write_model(MODEL_PATH)
-
+def dection_symmetry(A, obj, rhs, sense, vtype, read_file):
     presolve_model = Presolve(A, obj, rhs, sense)
     A1, rhs, obj, sense = presolve_model.to_standard()
     graph_factory = GraphFactory(A1, rhs, obj, vtype)
@@ -27,13 +21,8 @@ def dection_symmetry(n):
     adj = g.connect()
     vertex_coloring = g.color_node()
 
-    try:
-        ts = datetime.datetime.now()
-        grpsize1, grpsize2 = g.run(adj, vertex_coloring)
-    except Exception as e:
-        print("Timeout Error Catched!")
-        return [read_file, '--', '--', g.m, g.n, '--', '--', '--', '--']
-
+    ts = datetime.datetime.now()
+    grpsize1, grpsize2 = g.run(adj, vertex_coloring)
     te = datetime.datetime.now()
     orbits = g.get_orbits()
 
@@ -49,12 +38,20 @@ BENCHMARK_PATH = "./" + "benchmark/{}/".format(LIB_NAME)
 MODEL_PATH = "./" + "benchmark/model/"
 SOLVER = "Saucy" # Nauty, Saucy
 
-n_start, n_end = 200, 220
-results_remote = [dection_symmetry.remote(n) for n in range(n_start, n_end)]
+n_start, n_end = 200, 210
+model_data = ModelData(BENCHMARK_PATH)
+read_file = model_data.load(n_start, n_end, presolve = True)    
+A, rhs, obj, sense = model_data.get_coeff()
+vtype = model_data.get_vtype()
 
-log, timeout = [], 1800
-for r in results_remote:
-    log.append(ray.get(r, timeout=timeout))
+results_remote = [dection_symmetry.remote(A[n], obj[n], rhs[n], sense[n], vtype[n], read_file[n]) for n in range(0, n_end-n_start)]
+
+log, timeout = [], 60
+for i in range(len(results_remote)):
+    try:
+        log.append(ray.get(results_remote[i], timeout=timeout))
+    except Exception as error:
+        log.append([read_file[i],"--","--","--","--","--","--","--"])
 
 symmetry_moniter = Moniter()
 symmetry_moniter.read_prob_stat(LIB_NAME)
